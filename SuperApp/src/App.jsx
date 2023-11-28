@@ -2,12 +2,17 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { BrowserRouter,Routes,Route } from 'react-router-dom'
 import Registration from './pages/Registration'
+import Category from './pages/Category'
 function App() {
   return (
-    <>
-      <Registration/>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Registration/>}/>
+        <Route path='/category' element={<Category/>}/>
+      </Routes>
+    </BrowserRouter>
   )
 }
 

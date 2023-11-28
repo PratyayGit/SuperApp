@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import RegistrationImage from '../assets/image 13.png'
 import style from '../style/Registration.module.css'
+import { useNavigate } from 'react-router-dom';
 
 function Registration() {
   let [formData,setformData]=useState({
@@ -11,7 +12,7 @@ function Registration() {
   });
 
   let [formError,setformError]=useState({});
-
+  const navigate=useNavigate();
   let [ischaked, setisCheaked]=useState(false);
 
   const chengeHandler=(e)=>{
@@ -45,6 +46,7 @@ function Registration() {
     if(Object.keys(validForm).length===0){
       console.log("Form Submitted")
       localStorage.setItem('formData',JSON.stringify(formData));
+      navigate('/category');
     }
   }
 
