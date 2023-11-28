@@ -4,8 +4,6 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Registration from './pages/Registration'
 function App() {
-  
-
   return (
     <>
       <Registration/>
