@@ -51,7 +51,7 @@ function Registration() {
   }
 
   return (
-    <form onSubmit={submitHandler}>
+    <form onSubmit={submitHandler} >
         <div className={style.Registration}>
         <div className={style.r}>
             <img src={RegistrationImage} alt='registrationimg' className={style.Registration_img}/>

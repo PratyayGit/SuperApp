@@ -5,12 +5,14 @@ import './App.css'
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
 import Registration from './pages/Registration'
 import Category from './pages/Category'
+import Home from './pages/Home'
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Registration/>}/>
         <Route path='/category' element={<Category/>}/>
+        <Route path='/home' element={<Home/>}/>
       </Routes>
     </BrowserRouter>
   )

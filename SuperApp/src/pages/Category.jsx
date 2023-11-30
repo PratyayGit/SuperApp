@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Card from '../component/card/Card'
+// import { ImageArray } from '../component/card/Card'
+
+
+import style from '../style/Category.module.css'
+
 
 function Category() {
+  
   return (
-    <div> this is catagory page</div>
+    <Card/>
   )
 }
 

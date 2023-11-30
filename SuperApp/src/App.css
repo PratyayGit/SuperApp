@@ -1,8 +1,8 @@
-* {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
+*{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
 }
 .inputes{
   height: 185px;
@@ -48,3 +48,15 @@ p{
 .tandc{
   margin-top: -200px;
 }
+
+/* .card_img{
+  border: 3px solid yellow;
+    height: 130px;
+    width: 130px;
+}
+.card-list{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+} */
+
