@@ -1,8 +1,9 @@
 import React from 'react'
+import User from '../component/user/User'
 
 function Home() {
   return (
-    <div>This is Home Page</div>
+    <User/>
   )
 }
 

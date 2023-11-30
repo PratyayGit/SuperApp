@@ -93,6 +93,7 @@ function Card() {
             <h1 className={style.heading}>Super app</h1>
             <h1 className={style.subheading}>Choose your<br/>entertainment<br/>category</h1>
             {/* this section for select category appear */}
+
             <div className={style.block_cat}
             >
                 {/* this component will work when select a category */}
@@ -107,6 +108,7 @@ function Card() {
         </div>
         <div className={style.right_body}>
             <div className={style.cardbox}>
+                {/* movie card section */}
                 {ImageArray.map((data)=>(
                     <CardBlocks 
                         data={data}
@@ -115,9 +117,9 @@ function Card() {
                     />
                 ))} 
             </div>
-
+            
             <button className={style.nextPage_btn}
-             onClick={nextPageHandle}>Next page</button>
+             onClick={nextPageHandle}>Next Page</button>
         </div>
     </div>
   );

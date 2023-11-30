@@ -45,7 +45,7 @@ function Registration() {
 
     if(Object.keys(validForm).length===0){
       console.log("Form Submitted")
-      localStorage.setItem('formData',JSON.stringify(formData));
+      window.localStorage.setItem('formData',JSON.stringify(formData));
       navigate('/category');
     }
   }
