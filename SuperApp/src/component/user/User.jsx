@@ -3,16 +3,8 @@ import userProfile from '../../assets/user.png'
 
 import style from './User.module.css'
 function User() {
-    
-   
-
     const userInfo = JSON.parse(localStorage.getItem("formData"));
-    
     const userChoice = JSON.parse(localStorage.getItem("categoryChoice"));
-
-
-    
-    
 
   return (
     <div className={style.main_container}>
@@ -37,11 +29,12 @@ const Blocks=({category})=>{
    return(
     <div 
     style={{
-        height:"200px",
-        width:"390px",
-        fontSize:"15px",
+        
         display:"grid",
         gridTemplateColumns:"1fr 1fr",    
+        height:"200px",
+        width:"3px",
+        fontSize:"15px"
         }}
     >
     {category.map((data)=>(
@@ -49,9 +42,9 @@ const Blocks=({category})=>{
            <button 
             style={{
             height:"40px",
-            width:"150px",
+            width:"160px",
             backgroundColor:"#9F94FF", 
-            margin:"20px",
+            margin:"1vh",
             borderRadius:"12px",
             textAlign:"center"
            }}>
