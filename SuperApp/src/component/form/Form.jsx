@@ -25,8 +25,6 @@ const Form=()=> {
   const cheakValidForm=(data)=>{
     const errors={};
     const rejex=/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/i;
-
-
     for (const key in data){
        if (!data[key]) {
         errors[key]='This data is required';

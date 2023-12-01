@@ -72,7 +72,6 @@ const ImageArray=[
      }
 ]
 
-
 function Card() {
     const [category,setCategory]=useState([]);
     const [minLengthError,setMinLengthError]=useState(false);
@@ -107,7 +106,8 @@ function Card() {
 
         </div>
         <div className={style.right_body}>
-            <div className={style.cardbox}>
+           <div>
+           <div className={style.cardbox}>
                 {/* movie card section */}
                 {ImageArray.map((data)=>(
                     <CardBlocks 
@@ -115,8 +115,9 @@ function Card() {
                         category={category}
                         setCategory={setCategory}
                     />
-                ))} 
+                ))}
             </div>
+           </div>
             
             <button className={style.nextPage_btn}
              onClick={nextPageHandle}>Next Page</button>
@@ -148,9 +149,10 @@ const CardBlocks=({data,category,setCategory})=>{
             key={data.id}
             onClick={(e)=>handleClick(e)}
             style={{width:"200px",height:"200px",
-                    margin:"3px 0 0 0",
+                    margin:"0 0 0 0",
                     background:data["color"],borderRadius:"13px",zIndex:"1",
                     cursor:"pointer",
+                    // marginLeft:"4vh",
                     border: `${select? "4px solid green" : "4px solid white"}`
                 }}
             >
