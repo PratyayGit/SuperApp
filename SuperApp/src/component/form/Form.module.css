@@ -1,0 +1,70 @@
+.main_container{
+    display: flex;
+    background-color: #000;
+}
+
+.form_image{
+    height: 100vh;
+    width: 104vh;
+}
+.right_side{
+    width: 100vh;
+}
+.logo{
+    font-family: 'Single Day', cursive;
+    color: #72DB73;
+    font-weight: 100;
+    margin: 7vh 0 0 40vh;
+}
+.form_heading{
+    margin: 2vh 0 5vh 40vh;
+    font-weight: 500;
+}
+.input_form{
+    display: flex;
+    flex-direction: column;
+}
+.inputs_lable{
+    height: 5vh;
+    width: 40vh;
+    border: none;
+    border-radius: 3px;
+    margin-left: 29vh;
+    margin-top: 2vh;
+    padding-left: 1vh;
+    font-size: 2vh;
+}
+.inputs_lable::placeholder{
+    padding-left: 2vh;
+}
+.term_condition{
+    margin: 3vh 0 0 28.8vh;
+}
+.cheak_box{
+   margin-right: 1vh;
+}
+.cheakbox_label{
+    color: #7C7C7C;
+}
+.signup_btn{
+    background-color: #72DB73;
+    height: 3.9vh;
+    width: 40vh;
+    border: none;
+    border-radius: 23px;
+    margin-left: 29vh;
+    margin-top: 5vh;
+}
+.highlight{
+    color: #72DB73;
+}
+.tc{
+    margin-left: 29vh;
+    color: #7C7C7C;
+    font-size: 1.4vh;
+}
+.error_msg{
+    margin-top: 1vh;
+    margin-left: 29vh;
+    color: #FF0000;
+}
