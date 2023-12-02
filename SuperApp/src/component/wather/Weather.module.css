@@ -1,0 +1,111 @@
+.main_container{
+    height: 24vh;
+    background-color: #FF4ADE;
+    margin-top: 2vh;
+    border-radius: 3vh;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.datetime_container{
+    display: flex;
+    border-radius: 3vh;
+    width: 81vh;
+    height: 10vh;
+   
+}
+
+.date_section{
+    font-size: 5vh;
+    font-weight: bold;
+    color: white;
+    margin-top: 1vh;
+    margin-left: 13vh;
+    height: 7vh;
+}
+.time_section{
+    font-size: 5vh;
+    font-weight: bold;
+    color: white;
+    margin-top: 1vh;
+    margin-left: 8vh;
+    height: 7vh;
+}
+.weather_container{
+    background-color: #101744;
+    height: 17vh;
+    border: transparent;
+    border-radius: 0 0 3vh 3vh;
+    display: flex;
+    
+}
+.vertical_line{
+    height: 7vh;
+    width: 2px;
+    background-color:white;
+    margin-top: 5vh;
+    margin-left: 7vh;
+}
+.weather_image{
+    margin-left: 7vh;
+}
+.weather_image img{
+    height: 10vh;
+    width: 13vh;
+    /* border: 1px solid yellow; */
+}
+.weather_image p{
+    font-size: 3vh;
+    /* margin-bottom: 1vh; */
+    /* border: 1px solid yellow; */
+    margin-top: 2px;
+    margin-left: 2vh;
+}
+.temp_c{
+    font-size: 6vh;
+    
+    margin: 0 0 0 7vh;
+}
+.pressure_heading{
+    margin-left: 8vh;
+    display: flex;
+}
+.pressure_heading img{
+    height: 3.4vh;
+    width: 2.4vh;
+}
+.pressure_heading p{
+    
+    position: relative;
+    top: -1vh;
+    margin: 0 0 0 3vh;
+    font-size: 110%;
+}
+.wind_kph{
+    
+    margin: 3.4vh;
+}
+.wind_kph img{
+    height: 4vh;
+    margin-top: -1vh;
+}
+.wind_kph p{
+  
+    position: relative;
+    top: -8vh;
+    left: 6vh;
+}
+.humidity{
+    
+    margin-top: -7vh;
+    margin-left: 3vh;
+    display: flex;
+}
+.humidity img{
+    height: 3vh;
+}
+.humidity p{
+    margin-left: 2vh;
+    margin-top: -1vh;
+}
