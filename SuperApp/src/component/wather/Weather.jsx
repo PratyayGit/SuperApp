@@ -23,7 +23,7 @@ const Weather=()=> {
                    
         };
         fetchData();
-        setWeatherData(fetchData)
+        // setWeatherData(fetchData)
     },[]);
     
     

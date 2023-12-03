@@ -5,11 +5,15 @@ import News from '../component/news/News'
 
 function Home() {
   return (
-    <div style={{display:"flex"}}>
+    <div style={{display:"flex",
+    justifyContent:"space-between",
+    flex:"1vh"}}>
       <div style={{ 
       position:"absolute",
-      top:"7vh",
-      left:"8vh"
+      top:"1vh",
+      left:"8vh",
+      border:"1px solid yellow",
+      height:"2vh"
 
     
        }}>

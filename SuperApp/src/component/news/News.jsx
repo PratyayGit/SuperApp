@@ -1,34 +1,81 @@
 import React, { useState ,useEffect} from 'react'
 import style from './News.module.css'
 const News=()=> {
-  const[news,setNews]=useState("")
+  const[news,setNews]=useState({articles: []});
+  const [dateTime,setDateTime]=useState({dateToday: '',timeNow:''})
   useEffect(()=>{
     const fetchNews= async ()=>{
-      const url = 'https://newsdata.io/api/1/news?apikey=pub_33983b96bf9decd5866ce62a4e37dc653eca2&q=food&country=in&language=en&category=food ';
-  //     const options = {
-	//     method: 'GET',
-	//     headers: {
-	// 	'X-RapidAPI-Key': 'b6694d5caemshd83a8b0a3993adcp103f8bjsn4975cb65648b',
-	// 	'X-RapidAPI-Host': 'google-news13.p.rapidapi.com'
-	// }
-      // };
+      const url = 'https://newsapi.org/v2/everything?domains=wsj.com&apiKey=3ed64d13e53a4ca8a3c97837b3ee7ef4';
+  
       try {
         const response = await fetch(url);
-        const result = await response.text();
-        console.log(result);
+        const result = await response.json();
+        console.log(  result.articles[1]);
+        setNews(result)
       } catch (error) {
         console.error(error);
       }
     }
     fetchNews()
+    
 },[]);
+useEffect(() => {
+  const updateDateTime = () => {
+    const now = new Date();  
+    
+
+    let hour = now.getHours();
+    let minute = now.getMinutes();
+    const period = hour >= 12 ? 'PM' : 'AM';
+    
+    if(hour>12){
+      hour=hour-12;
+      if(hour<10){
+        hour="0"+hour
+      }
+      
+    }
+    if(hour<10){
+      hour="0"+hour;
+    }
+    let day=now.getDate();
+    day=day<10?"0"+day:day;
+    let month=now.getMonth()+1;
+    month=month<10?"0"+month:month;
+    let year=now.getFullYear();
+    
+    minute=minute<10? "0"+minute:minute;
+    const timeNow=hour+':'+minute+' '+period;
+    const dateToday=day+'-'+month+'-'+year;
+    setDateTime(preevTime=>({
+      
+      dateToday,
+      timeNow
+    }));
+
+    
+  };
+      // Update the local date and time every second
+      const intervalId = setInterval(updateDateTime, 1000);
+
+      // Clean up the interval when the component is unmounted
+      return () => clearInterval(intervalId)
+  
+      
+    }, [])
   return (
-    <div style={{
-      marginLeft:"150vh"
-    }}>
+    <div className={style.news_mainconainer}>
         
-        <div>this is news api</div>
-        <p>{news?.description}</p>
+        <div>
+          <img src={news.articles[1]?.urlToImage}/>
+          <div className={style.news_title}>
+            {news.articles[1]?.title}<br/>
+            <p style={{color:"white",marginTop:"2px",marginLeft:"-15px"}}>{dateTime.dateToday}{" "}{dateTime.timeNow}</p>
+          </div>
+        </div>
+        <div className={style.news_conttent}>
+            <p>{news.articles[1]?.content}</p>
+        </div>
     </div>
   )
 }
