@@ -1,40 +1,40 @@
 .main_container{
-    height: 24vh;
+    height: 21vh;
+    width: 30vw;
     background-color: #FF4ADE;
     margin-top: 2vh;
     border-radius: 3vh;
     display: flex;
     flex-direction: column;
-   
+    position: relative;
+    left: 6.3vw;
 }
 
 .datetime_container{
     display: flex;
     border-radius: 3vh;
-    width: 81vh;
-    height: 10vh;
-   
+    width: 30vw;
+    height: 7vh;
 }
 
 .date_section{
-    font-size: 5vh;
+    font-size: 4vh;
     font-weight: bold;
     color: white;
     margin-top: 1vh;
-    margin-left: 13vh;
-    height: 7vh;
+    margin-left: 10vh;
+    
 }
 .time_section{
-    font-size: 5vh;
+    font-size: 4vh;
     font-weight: bold;
     color: white;
     margin-top: 1vh;
-    margin-left: 8vh;
-    height: 7vh;
+    margin-left: 4vh;
 }
 .weather_container{
     background-color: #101744;
-    height: 17vh;
+    height: 15vh;
     border: transparent;
     border-radius: 0 0 3vh 3vh;
     display: flex;
@@ -44,31 +44,32 @@
     height: 7vh;
     width: 2px;
     background-color:white;
-    margin-top: 5vh;
-    margin-left: 7vh;
+    margin-top: 4vh;
+    margin-left: 5vh;
 }
 .weather_image{
-    margin-left: 7vh;
+    margin-left: 2vw;
 }
 .weather_image img{
-    height: 10vh;
-    width: 13vh;
-    /* border: 1px solid yellow; */
+    height: 7vh;
+    width: 5vw;
+    margin-top: 1vh;
+    
 }
 .weather_image p{
     font-size: 3vh;
-    /* margin-bottom: 1vh; */
-    /* border: 1px solid yellow; */
+    
     margin-top: 2px;
     margin-left: 2vh;
 }
 .temp_c{
-    font-size: 6vh;
-    
-    margin: 0 0 0 7vh;
+    font-size: 5vh;
+   
+    margin: 1vh 0 0 7vh;
 }
 .pressure_heading{
-    margin-left: 8vh;
+    margin-top: 1vh;
+    margin-left: 7vh;
     display: flex;
 }
 .pressure_heading img{
@@ -87,13 +88,13 @@
     margin: 3.4vh;
 }
 .wind_kph img{
-    height: 4vh;
+    height: 3vh;
     margin-top: -1vh;
 }
 .wind_kph p{
   
     position: relative;
-    top: -8vh;
+    top: -6vh;
     left: 6vh;
 }
 .humidity{
@@ -104,8 +105,16 @@
 }
 .humidity img{
     height: 3vh;
+    margin-left: 1vh;
 }
 .humidity p{
-    margin-left: 2vh;
+    margin-left: 3vh;
     margin-top: -1vh;
+}
+.vertical_line2{
+    height: 7vh;
+    width: 2px;
+    background-color:white;
+    margin-top: 4vh;
+    margin-left: 5vh;
 }

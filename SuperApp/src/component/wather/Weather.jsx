@@ -15,7 +15,7 @@ const Weather=()=> {
            
             
                 fetch(
-                 "http://api.weatherapi.com/v1/current.json?key=c0e59d85c6f24d4aa06191134230212&q=India&aqi=no"
+                 "http://api.weatherapi.com/v1/current.json?key=c0e59d85c6f24d4aa06191134230212&q=Kolkata&aqi=no"
                 )
                 .then(async (data) => await data.json())
                   .then((data) => setWeatherData(data));
@@ -99,7 +99,7 @@ const Weather=()=> {
             {/* <p>pressure</p> */}
           </div>
         </div>
-        <div className={style.vertical_line}>
+        <div className={style.vertical_line2}>
         </div>
         <div>
           <div className={style.wind_kph}>
