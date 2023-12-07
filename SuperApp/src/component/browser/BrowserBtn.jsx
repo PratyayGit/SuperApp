@@ -4,7 +4,7 @@ import style from './BrowserBtn.module.css'
 const BrowserBtn=()=> {
     const navigate =useNavigate();
     const onbtnClick=()=>{
-        navigate('/Entertainment');
+        navigate('/browseentertainment');
     }
   return (
     <button className={style.btn}

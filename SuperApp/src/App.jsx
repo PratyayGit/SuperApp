@@ -6,7 +6,7 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom'
 import Registration from './pages/Registration'
 import Category from './pages/Category'
 import Home from './pages/Home'
-import Entertainment from './pages/Entertainment'
+import BrowseEntertainment from './pages/BrowseEntertainment'
 function App() {
   return (
     <BrowserRouter>
@@ -14,7 +14,8 @@ function App() {
         <Route path='/' element={<Registration/>}/>
         <Route path='/category' element={<Category/>}/>
         <Route path='/home' element={<Home/>}/>
-        <Route path='/entertainment' element={<Entertainment/>}/>
+        <Route path='/browseentertainment' element={<BrowseEntertainment/>}/>
+        <Route path='/browseentertainment/home' element={<Home/>}/>
       </Routes>
     </BrowserRouter>
   )

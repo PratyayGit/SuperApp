@@ -1,0 +1,24 @@
+.header{
+    margin-top: 2vh;
+    margin-left: 3vw;
+}
+.header h1{
+    font-family: 'Single Day', cursive;
+    color: #72DB73;
+    font-weight: 100;
+}
+.header h2{
+    margin-left: 5vw;
+    font-weight: 1000;
+}
+.movile_list{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2vw;
+}
+.category_title{
+    color: #878787;
+    font-size: xx-large;
+    font-family: Roboto;
+    margin-left: 5vw;
+}
