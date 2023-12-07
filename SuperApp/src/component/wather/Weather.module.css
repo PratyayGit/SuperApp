@@ -45,7 +45,7 @@
     width: 2px;
     background-color:white;
     margin-top: 4vh;
-    margin-left: 5vh;
+    margin-left: 4vh;
 }
 .weather_image{
     margin-left: 2vw;
@@ -57,7 +57,7 @@
     
 }
 .weather_image p{
-    font-size: 3vh;
+    font-size: 2vh;
     
     margin-top: 2px;
     margin-left: 2vh;
@@ -81,7 +81,7 @@
     position: relative;
     top: -1vh;
     margin: 0 0 0 3vh;
-    font-size: 110%;
+    font-size: 100%;
 }
 .wind_kph{
     
@@ -116,5 +116,5 @@
     width: 2px;
     background-color:white;
     margin-top: 4vh;
-    margin-left: 5vh;
+    margin-left: 4vh;
 }

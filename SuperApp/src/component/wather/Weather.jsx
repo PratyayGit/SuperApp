@@ -18,8 +18,8 @@ const Weather=()=> {
                  "http://api.weatherapi.com/v1/current.json?key=c0e59d85c6f24d4aa06191134230212&q=Kolkata&aqi=no"
                 )
                 .then(async (data) => await data.json())
-                  .then((data) => setWeatherData(data));
-                // setWeatherData(response.data)
+                .then((data) => setWeatherData(data));
+                
                    
         };
         fetchData();

@@ -4,6 +4,7 @@ import Weather from '../component/wather/Weather'
 import News from '../component/news/News'
 import Timer from '../component/timer/Timer'
 import Note from '../component/note/Note'
+import BrowserBtn from '../component/browser/BrowserBtn'
 
 function Home() {
   return (
@@ -22,6 +23,7 @@ function Home() {
       </div>
       <div>
         <News/>
+        <BrowserBtn/>
       </div>
     
     </div>
