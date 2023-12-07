@@ -10,7 +10,6 @@ const News=()=> {
       try {
         const response = await fetch(url);
         const result = await response.json();
-        console.log(  result.articles[1]);
         setNews(result)
       } catch (error) {
         console.error(error);
@@ -76,6 +75,7 @@ useEffect(() => {
         <div className={style.news_conttent}>
             <p>{news.articles[1]?.content}</p>
         </div>
+        
     </div>
   )
 }

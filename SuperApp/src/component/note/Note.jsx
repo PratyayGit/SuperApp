@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 import style from './Note.module.css'
-import { json } from 'react-router-dom';
+
 const Note=()=> {
     const [noteText,setNoteText]=useState(
         JSON.parse(localStorage.getItem('notes'))

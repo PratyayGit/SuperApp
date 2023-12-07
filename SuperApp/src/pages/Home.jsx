@@ -11,8 +11,6 @@ function Home() {
     backgroundColor:"black",
     height:"100vh",
     width:"100vw"
-   
-    
     }}
     >
       <div>
@@ -22,9 +20,6 @@ function Home() {
         <Timer/>
         
       </div>
-     
-          
-     
       <div>
         <News/>
       </div>

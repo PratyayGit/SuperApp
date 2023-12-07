@@ -152,7 +152,7 @@ const CardBlocks=({data,category,setCategory})=>{
                     margin:"0 0 0 0",
                     background:data["color"],borderRadius:"13px",zIndex:"1",
                     cursor:"pointer",
-                    // marginLeft:"4vh",
+                    outline:"none",
                     border: `${select? "4px solid green" : "4px solid white"}`
                 }}
             >
