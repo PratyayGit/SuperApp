@@ -55,7 +55,7 @@ const Form=()=> {
   }
   
   return (
-    <div className={style.main_container}>
+    <div className={style.main_section}>
       <div>
       <img src={signupImage} alt={'Image'} className={style.form_image}/>
       </div>
